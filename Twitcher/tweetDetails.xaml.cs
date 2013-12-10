@@ -15,6 +15,9 @@ namespace Twitcher
         public tweetDetails()
         {
             InitializeComponent();
+            menuItemList.ItemsSource = tweetList.menuData.selectedItem.Items;
+            detailsTitle.Text = tweetList.menuData.selectedItem.Title;
         }
     }
 }
+

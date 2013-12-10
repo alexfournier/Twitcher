@@ -18,9 +18,9 @@ namespace Twitcher
     {
         public static MenuResponse menuJsonData = null;
         public CategoryItem selectedItem { get; set; }
-    
 
-     public MenuData()
+
+        public MenuData()
         {
             LoadMenuDataLocal();
         }
@@ -63,6 +63,9 @@ namespace Twitcher
             public string Title { get; set; }
 
             [DataMember]
+            public string hashtag { get; set; }
+
+            [DataMember]
             public string img { get; set; }
 
             [DataMember]
@@ -93,7 +96,7 @@ namespace Twitcher
             {
                 WebClient webClient = new WebClient();
                 webClient.DownloadStringCompleted += new DownloadStringCompletedEventHandler(webClient_DownloadStringCompleted);
-                webClient.DownloadStringAsync(new Uri("http://alexfournier.netne.net/resources.json"));
+                webClient.DownloadStringAsync(new Uri("http://alexfournier.netne.net/twitterJson.json"));
                 return;
             }
         }
@@ -101,7 +104,7 @@ namespace Twitcher
         private void webClient_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)
         {
             var frame = App.Current.RootVisual as PhoneApplicationFrame;
-            var container = frame.Content as MainPage;
+            var container = frame.Content as tweetList;
 
             if (e.Error == null) // ensure we have data
             {
@@ -110,8 +113,8 @@ namespace Twitcher
                 {
                     menuJsonData = JsonConvert.DeserializeObject<MenuResponse>(json);
                     frame = App.Current.RootVisual as PhoneApplicationFrame;
-                    //container = frame.Content as MainPage;
-                    container = frame.Content as MainPage;
+
+                    container = frame.Content as tweetList;
                     container.longList.ItemsSource = menuJsonData.Categories;
                 }
             }

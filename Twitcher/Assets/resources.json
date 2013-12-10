@@ -4,126 +4,142 @@
     "timestamp": 1383163259,
     "categories": [
         {
-            "title": "Baquettes",
-            "img": "images/baguette.png",
-            "desc": "Tear off the end of a Dynamite baguette and you'll see where it gets its name",
+            "title": "Joshua Davidson",
+            "img": "Assets/images/gal_inside.png",
+            "desc": "13 hrs 9 minâ€. Not true, itâ€™s just way too easy to kick o...",
             "items": [
                 {
-                    "title": "Classic",
-                    "img": "images/baguette.png",
-                    "desc": "Classique </h3> For the ultimate classic baguette, Kevin chose to combine two kinds of pre-ferments",
-                    "price": "5,56$"
-                },
-                {
-                    "title": "Multigrain",
-                    "img": "images/sami.png",
-                    "desc": "Natural wheat flour, sea salt, levain, poolish",
-                    "price": "7.77$"
-                },
-                {
-                    "title": "Dynamite White",
-                    "img": "images/bread.png",
-                    "desc": "Dynamite White </h3> The bread that started it all",
-                    "price": "3.33$"
-                },
-                {
-                    "title": "Roasted Garlic",
-                    "img": "images/bakers.png",
-                    "desc": "No shrinking violet, this bold & beautiful bread is loaded with a perfect balance of freshly roasted garlic and fresh rosemary",
-                    "price": "9.99$"
+                    "title": "Joshua Davidson",
+					"hashtag": "@dasjoshua",
+                    "img": "Assets/images/gal_inside.png",
+                    "desc": "13 hrs 9 minâ€. Not true, itâ€™s just way too easy to kick off the sleeping mode on this thing!",
+                    "price": "Mon Dec 09 23:05:40"
                 }
             ]
         },
         {
-            "title": "Sandwiches",
-            "img": "images/sami.png",
-            "desc": "The sandwiches are to die for as well as the pastries, they were fresh and filled with flavour.",
+            "title": "Remy Sharp",
+            "img": "Assets/images/gal_bread.png",
+            "desc": "Sheesh. Finally replied to an email from nearly a month ago...",
             "items": [
                 {
-                    "title": "Chicken Ceasar",
-                    "img": "images/baguette.png",
-                    "desc": "Tender chicken pieces with bacon, havarti, tomatoes, arugula and our homemade Caesar dressing. Served on our Dynamite Cheddar, jalapeno & chive bread",
-                    "price": "7.53$"
-                },
-                {
-                    "title": "Ham and Cheese",
-                    "img": "images/sami.png",
-                    "desc": "Slices of ham with cheddar, tomatoes, arugula and our home made lemon chive mayonnaise. Served on our Dynamite Rosemary bread",
-                    "price": "3.33$"
-                },
-                {
-                    "title": "Tuna Melt",
-                    "img": "images/bread.png",
-                    "desc": "Flaked tuna mixed with diced pickles, onions, celery, carrots, smoked paprika, dill and mayonnaise. Topped with cheddar and arugula. Served on our Dynamite dill, potato and caramelized onion bread",
-                    "price": "5.75$"
-                },
-                {
-                    "title": "Pickle Melt",
-                    "img": "images/bakers.png",
-                    "desc": "Tempura battered pickle with caramelized onions, cheddar, arugula and a spicy mayo. Served on our Dynamite Cheddar, jalapeno & chive bread",
-                    "price": "33.33$"
+                    "title": "Remy Sharp",
+					"hashtag": "@rem",
+                    "img": "Assets/images/gal_bread.png",
+                    "desc": "Sheesh. Finally replied to an email from nearly a month ago. I feel bad, but business travel & training has nuked my email response ability.",
+                    "price": "Mon Dec 09 23:25:40"
                 }
             ]
         },
         {
-            "title": "Bread",
-            "img": "images/bread.png",
-            "desc": "Sourdough or Pain au Levain, are dense delicious naturally leavened breads with a very delicate tang.",
+            "title": "Treehouse",
+            "img": "Assets/images/gal_bread2.png",
+            "desc": "Hi Team! The site will be down at 4am EST while we update...",
             "items": [
                 {
-                    "title": "Cranberry & Nine Grain",
-                    "img": "images/baguette.png",
-                    "desc": "This bread has a light tanginess and lingering earthy flavour.",
-                    "price": "6.76$"
-                },
-                {
-                    "title": "Oat & Honey",
-                    "img": "images/sami.png",
-                    "desc": "Organic whole wheat flour, levain, sea salt, water, honey and rolled oat soaker, a few flax seeds.",
-                    "price": "5.99$"
-                },
-                {
-                    "title": "Crazy Grain",
-                    "img": "images/bread.png",
-                    "desc": "Equal parts of wheat, rye and spelt with a multitude of grains, blackstrap molasse, local honey and a touch of buttermilk for the fluffiness.",
-                    "price": "7.89$"
-                },
-                {
-                    "title": "Potato Buttermilk",
-                    "img": "images/bakers.png",
-                    "desc": "Earthy sweetness of roasted Yukon Gold potatoes complemented with a silky and chewy texture. This moist and tender loaf has a thinner, softer crust.",
-                    "price": "33.33$"
+                    "title": "Treehouse",
+					"hashtag": "@treehouse",
+                    "img": "Assets/images/gal_bread2.png",
+                    "desc": "Hi Team! The site will be down at 4am EST while we update the site. We'll be back up and learning with you at approximately 5am. Stay tuned!",
+                    "price": "Thu Nov 29 02:15:24"
                 }
             ]
         },
         {
-            "title": "Bakers Creations",
-            "img": "images/bakers.png",
-            "desc": "Killer cookies! There's no question, Kevin is passionate about bread but he also happens to be obsessed with sweets.",
+            "title": "Veronica Wong",
+            "img": "Assets/images/gal_bread3.png",
+            "desc": "So amazing to get to meet and talk to people that use/design/develop @shopi...",
             "items": [
                 {
-                    "title": "Chocolate Chewy Cookies",
-                    "img": "images/baguette.png",
-                    "desc": " Our Killer Cookies combine all the best elements of grandma’s homemade treats",
-                    "price": "2.99$"
-                },
+                    "title": "Veronica Wong",
+					"hashtag": "@supervee",
+                    "img": "Assets/images/gal_bread3.png",
+                    "desc": "So amazing to get to meet and talk to people that use/design/develop @shopify and hear about their real world experiences",
+                    "price": "Mon Dec 09 23:05:51"
+                }
+            ]
+        },
+        {
+            "title": "Dan Cederholm",
+            "img": "Assets/images/gal_burg.png",
+            "desc": "Packing for tomorrowâ€™s Dribbble Meetup at @adobe. Loo...",
+            "items": [
                 {
-                    "title": "Scones",
-                    "img": "images/sami.png",
-                    "desc": "wholesome ingredients, lovingly made by hand.",
-                    "price": "2.30$"
-                },
+                    "title": "Dan Cederholm",
+					"hashtag": "@danced",
+                    "img": "Assets/images/gal_burg.png",
+                    "desc": "Packing for tomorrowâ€™s Dribbble Meetup at @adobe. Looking forward to seeing some San Francisco friends.",
+                    "price": "Mon Dec 07 23:05:51"
+                }
+            ]
+        },
+        {
+            "title": "Joshua Davidson",
+            "img": "Assets/images/gal_burg2.png",
+            "desc": "I would love to help grow your business next year. Email me at Joshua@ChopDa...",
+            "items": [
                 {
-                    "title": "Macarons",
-                    "img": "images/bread.png",
-                    "desc": " with the decadent twist that comes from the kitchen of a classically trained pastry chef.",
-                    "price": "33.33$"
-                },
+                    "title": "Joshua Davidson",
+					"hashtag": "@dasjoshua",
+                    "img": "Assets/images/gal_burg2.png",
+                    "desc": "I would love to help grow your business next year. Email me at Joshua@ChopDawg.com to discuss about my personal consulting services!",
+                    "price": "Mon Dec 08 12:05:31"
+                }
+            ]
+        },
+        {
+            "title": "Jessica Hische",
+            "img": "Assets/images/gal_cook.png",
+            "desc": "Going to spend sometime today buying all the albums I've listened to on @rdio nons...",
+            "items": [
                 {
-                    "title": "Almond Briche Toast",
-                    "img": "images/bakers.png",
-                    "desc": " kitchen of a classically trained pastry chef. These cookies are unforgettable.",
-                    "price": "33.33$"
+                    "title": "Jessica Hische",
+					"hashtag": "@jessicahische",
+                    "img": "Assets/images/gal_cook.png",
+                    "desc": "Going to spend sometime today buying all the albums I've listened to on @rdio nonstop lately. Yay for putting money in artist's pockets!",
+                    "price": "Mon Dec 09 2:03:48"
+                }
+            ]
+        },
+        {
+            "title": "Jeffrey Zeldman",
+            "img": "Assets/images/gal_inside.png",
+            "desc": "Could the UX of opening a doc in Word 2011 be any worse for occasional users? Ope...",
+            "items": [
+                {
+                    "title": "Jeffrey Zeldman",
+					"hashtag": "@zeldman",
+                    "img": "Assets/images/gal_inside.png",
+                    "desc": "Could the UX of opening a doc in Word 2011 be any worse for occasional users? Opens 5 old docs I donâ€™t want, demands 111mb critical update.",
+                    "price": "Mon Dec 09 13:25:31"
+                }
+            ]
+        },
+        {
+            "title": "Ryan Gantz",
+            "img": "Assets/images/gal_logo.png",
+            "desc": "Headed to mall but can't decide whether to wear my Homey Don't Play That shirt or my Don...",
+            "items": [
+                {
+                    "title": "Ryan Gantz",
+					"hashtag": "@sixfoot6",
+                    "img": "Assets/images/gal_logo.png",
+                    "desc": "Headed to mall but can't decide whether to wear my Homey Don't Play That shirt or my Don't Have A Cow Man one, I'm so bad with decisions FML",
+                    "price": "Mon Dec 09 15:03:10"
+                }
+            ]
+        },
+        {
+            "title": "Jeremy Keith",
+            "img": "Assets/images/gal_pan.png",
+            "desc": "Many thanks to everybody who was at @FullFrontalConf for being so kin...",
+            "items": [
+                {
+                    "title": "Jeremy Keith",
+					"hashtag": "@adactio",
+                    "img": "Assets/images/gal_pan.png",
+                    "desc": "Many thanks to everybody who was at @FullFrontalConf for being so kind and receptiveâ€”much appreciated.",
+                    "price": "Mon Dec 09 23:05:51"
                 }
             ]
         }

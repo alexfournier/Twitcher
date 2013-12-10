@@ -53,7 +53,7 @@
 
             <!--        Title        -->
             <StackPanel Grid.ColumnSpan="4" Grid.RowSpan="2" x:Name="TitlePanel">
-                <TextBlock Text="Tweets" FontFamily="Nyala" LineHeight="6" CharacterSpacing="150" Foreground="White" FontWeight="Light" FontSize="50" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="0,24,0,0"/>
+                <TextBlock Text="Tweets" FontFamily="Segoe UI Semilight" LineHeight="6" CharacterSpacing="150" Foreground="White" FontWeight="Light" FontSize="50" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="0,24,0,0"/>
             </StackPanel>
 
             <Rectangle  Grid.ColumnSpan ="4" Canvas.ZIndex="-1" Margin="0,0,0,199" Grid.RowSpan="4">
@@ -63,33 +63,19 @@
             </Rectangle>
 
             <!-- TWEETS WILL LOAD WITH JSON USING LONG LIST SELECTOR, DATA TEMPLATS, AND ITEM BINDINGS -->
-
-
-            <phone:LongListSelector x:Name="tweetLongList" ItemsSource="{Binding Categories}" Tap="longListTap2" Grid.Row="2" Grid.RowSpan="13" Grid.ColumnSpan="4">
-
+            <phone:LongListSelector x:Name="longList" ItemsSource="{Binding Categories}" Tap="longListTap" Grid.Row="2" Grid.RowSpan="13" Grid.ColumnSpan="4">
                 <phone:LongListSelector.ItemTemplate>
                     <DataTemplate>
-
                         <StackPanel Orientation="Horizontal" Grid.ColumnSpan="4" Grid.RowSpan="2" Grid.Row="7">
-                            
                             <Image Source="{Binding img}" Height="80" Width="80" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="6,0,0,0" />
-                            
                             <StackPanel>
-
-                                <TextBlock Text="{Binding title}" Style="{StaticResource PhoneTextLargeStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" />
-
-                                <TextBlock Text="{Binding desc}" Style="{StaticResource PhoneTextSubtleStyle}" FontFamily="OCR A Extended" VerticalAlignment="Center" HorizontalAlignment="Left" TextWrapping="Wrap" Margin="12,0,0,0" Width="348" />
-                            
+                                <TextBlock Text="{Binding Title}" Style="{StaticResource PhoneTextLargeStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                                <TextBlock Text="{Binding Desc}" Style="{StaticResource PhoneTextSubtleStyle}" FontFamily="OCR A Extended" VerticalAlignment="Center" HorizontalAlignment="Left" TextWrapping="Wrap" Margin="12,0,0,0" Width="348" />
                             </StackPanel>
-                            
                         </StackPanel>
-
                     </DataTemplate>
                 </phone:LongListSelector.ItemTemplate>
-
             </phone:LongListSelector>
-            
         </Grid>
     </Grid>
-
 </phone:PhoneApplicationPage>

@@ -55,11 +55,11 @@
                 <Rectangle.Fill>
                     <ImageBrush Stretch="Fill" ImageSource="/Assets/images/tweet2.png" Opacity="0.055"/>
                 </Rectangle.Fill>
-
             </Rectangle>
+            
             <!--        Title     CHANGE FONT ???  FONT DOESNT SHOW ON DEVICE -->
             <StackPanel Grid.ColumnSpan="4" Grid.RowSpan="2" x:Name="TitlePanel">
-                <TextBlock Text="Tweet Search" FontFamily="Quartz MS" LineHeight="6" CharacterSpacing="150" Foreground="White" FontWeight="Light" FontSize="50" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="0,24,0,0"/>
+                <TextBlock Text="Tweet Search" FontFamily="Segoe UI Semilight" LineHeight="6" CharacterSpacing="150" Foreground="White" FontWeight="Light" FontSize="50" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="0,24,0,0"/>
             </StackPanel>
 
             <Rectangle  Grid.ColumnSpan ="4" Canvas.ZIndex="-1" Margin="0,0,0,180" Grid.RowSpan="4">
@@ -69,59 +69,37 @@
             </Rectangle>
 
             <!--        Inputs        -->
-            <StackPanel Grid.ColumnSpan="2" Grid.RowSpan="2" Grid.Row="2" Grid.Column="1">
+            <StackPanel Grid.ColumnSpan="2" Grid.RowSpan="3" Grid.Row="3" Grid.Column="1">
                 <TextBlock Text ="Enter Words To Search Twitter:" Margin="12,0,0,0" />
                 <TextBox x:Name="InputField" FontSize="40" Tap="InputField_GotFocus" InputScope="Text" Padding="0" FontFamily="Segoe UI Semilight" />
             </StackPanel>
 
             <!--        Buttons        -->
-            <Button x:Name="mapBtn" Grid.Row="4" BorderThickness="1" Tap="mapViewTap" Grid.Column="1" Grid.RowSpan="2" Padding="0" Background="#FF4099FF" BorderBrush="#FF4099FF" >
+            <Button x:Name="mapBtn" Grid.Row="5" BorderThickness="1" Tap="mapViewTap" Grid.Column="1" Grid.RowSpan="2" Padding="0" Background="#FF4099FF" BorderBrush="#FF4099FF" >
                 <StackPanel Width="230" Height="64" HorizontalAlignment="Center" VerticalAlignment="Center">
                     <TextBlock Text="View On Map" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0" Padding="0,14,0,0" Foreground="#FF1F1F1F" FontWeight="Bold" />
                 </StackPanel>
             </Button>
 
-            <Button x:Name="listBtn" Grid.Column ="2" Grid.Row="4" BorderThickness="1" Tap="listViewTap" Grid.RowSpan="2" Background="#FF4099FF" BorderBrush="#FF4099FF" >
+            <Button x:Name="listBtn" Grid.Column ="2" Grid.Row="5" BorderThickness="1" Tap="listViewTap" Grid.RowSpan="2" Background="#FF4099FF" BorderBrush="#FF4099FF" >
                 <StackPanel Width="230" Height="64" HorizontalAlignment="Center" VerticalAlignment="Center">
                     <TextBlock Text="View As List" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0" Padding="0,14,0,0" Foreground="#FF1F1F1F" FontWeight="Bold" />
                 </StackPanel>
             </Button>
-
-            <!-- TWEETS @TWITCHER -->
-            <phone:LongListSelector x:Name="longList" ItemsSource="{Binding Categories}" Grid.Row="7" Grid.RowSpan="8" Grid.ColumnSpan="4">
-
-                <phone:LongListSelector.ItemTemplate>
-                    <DataTemplate>
-
-                        <StackPanel Orientation="Horizontal" Grid.ColumnSpan="4" Grid.RowSpan="2" Grid.Row="7">
-
-                            <Image Source="{Binding img}" Height="80" Width="80" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="6,0,0,0" />
-
-                            <StackPanel>
-
-                                <TextBlock Text="{Binding Title}" Style="{StaticResource PhoneTextLargeStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" />
-
-                                <TextBlock Text="{Binding Desc}" Style="{StaticResource PhoneTextSubtleStyle}" FontFamily="OCR A Extended" VerticalAlignment="Center" HorizontalAlignment="Left" TextWrapping="Wrap" Margin="12,0,0,0" Width="348" />
-
-                            </StackPanel>
-
-                        </StackPanel>
-
-                    </DataTemplate>
-                </phone:LongListSelector.ItemTemplate>
-
-            </phone:LongListSelector>
-
+            <StackPanel Grid.RowSpan="3" Grid.ColumnSpan="1" Grid.Column="1" Grid.Row="8" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Image Source="Assets/images/Mail.png" Width="135" Tap="emailTap"/>
+            </StackPanel>
+            <StackPanel Grid.RowSpan="3" Grid.ColumnSpan="1" Grid.Column="2" Grid.Row="8" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Image Source="Assets/images/Phone.png" Width="135" Tap="phoneTap"/>
+            </StackPanel>
         </Grid>
     </Grid>
     <phone:PhoneApplicationPage.ApplicationBar>
-        <!-- THERES A SQUARE AROUND THE ICON BUTTON WHEN U RUN THE APP. IT SHOULDNT BE THERE -->
         <shell:ApplicationBar Mode="Default" Opacity="1.0" IsMenuEnabled="True" IsVisible="True" ForegroundColor="#FF4099FF">
             <shell:ApplicationBarIconButton IconUri="Assets/questionmark.png" Text="Close KB" Click="closeKB" />
 
             <shell:ApplicationBar.MenuItems>
                 <shell:ApplicationBarMenuItem Text="Help" Click="AppBarIconBtn"/>
-                <shell:ApplicationBarMenuItem Text="Fetch" Click="fetchData"/>
                 <shell:ApplicationBarMenuItem Click="AppBarIconBtn" Text="About"/>
             </shell:ApplicationBar.MenuItems>
 
